@@ -1,0 +1,151 @@
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mine-Download | Configuraciones de Plugins</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M21 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7h2v7h14v-7h2m-6-2V7h3l-4-4-4 4h3v4H3v2h18v-2h-6Z"/>
+        </svg>
+        <h1>Mine-Download</h1>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="populares.html">Más Populares</a></li>
+        <li><a href="recent.html">Recientes</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="customizer.html">Custom</a></li>
+        <li><a href="https://docs.mine-download.com" target="_blank">Docs</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Cambiar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Bienvenido a Mine-Download</h1>
+        <p>Tu fuente confiable de configuraciones optimizadas para plugins de Minecraft</p>
+        <a href="#configsSection" class="cta-button">Explorar Configuraciones</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">1000+</span>
+          <span class="stat-label">Descargas Totales</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Reviews</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4.8</span>
+          <span class="stat-label">Valoración Media</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <h2>¿Por qué elegir nuestras configuraciones?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-check-circle"></i>
+            <h3>Optimizadas</h3>
+            <p>Configuraciones probadas y optimizadas para el mejor rendimiento.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Actualizadas</h3>
+            <p>Siempre al día con las últimas versiones de los plugins.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>Comunidad Activa</h3>
+            <p>Reviews y comentarios de usuarios reales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="configsSection">
+      <h2>Configuraciones Disponibles</h2>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar configuración...">
+        <i class="fas fa-search"></i>
+      </div>
+      
+      <div class="configs-grid" id="configsContainer">
+        <!-- Las tarjetas se generarán dinámicamente -->
+      </div>
+    </div>
+
+    <!-- Modal para reviews -->
+    <div id="reviewModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Reviews de <span id="configName"></span></h3>
+        <div class="reviews-container" id="reviewsContainer">
+          <!-- Reviews se generarán dinámicamente -->
+        </div>
+        <div class="add-review">
+          <h4>Agregar Review</h4>
+          <textarea id="reviewText" placeholder="Escribe tu review aquí..."></textarea>
+          <div class="rating">
+            <i class="far fa-star" data-rating="1"></i>
+            <i class="far fa-star" data-rating="2"></i>
+            <i class="far fa-star" data-rating="3"></i>
+            <i class="far fa-star" data-rating="4"></i>
+            <i class="far fa-star" data-rating="5"></i>
+          </div>
+          <button id="submitReview" class="submit-review-btn">Enviar Review</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Mine-Download</h3>
+        <p>Ofrecemos las mejores configuraciones de plugins para tu servidor de Minecraft, optimizadas y listas para usar.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://discord.gg/example" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://github.com/example" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/example" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2023 Mine-Download. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

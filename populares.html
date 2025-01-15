@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Más Populares | Mine-Download</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M21 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7h2v7h14v-7h2m-6-2V7h3l-4-4-4 4h3v4H3v2h18v-2h-6Z"/>
+        </svg>
+        <h1>Mine-Download</h1>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="populares.html">Más Populares</a></li>
+        <li><a href="recent.html">Recientes</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="customizer.html">Custom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Configuraciones Más Populares</h1>
+        <p>Las configuraciones más descargadas y mejor valoradas por nuestra comunidad</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="search-filters">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Buscar configuración...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="filters">
+          <select id="versionFilter" class="filter-select">
+            <option value="">Todas las versiones</option>
+            <option value="1.20">1.20.x</option>
+            <option value="1.19">1.19.x</option>
+            <option value="1.18">1.18.x</option>
+          </select>
+          <select id="categoryFilter" class="filter-select">
+            <option value="">Todas las categorías</option>
+            <option value="admin">Administración</option>
+            <option value="world">Mundo</option>
+            <option value="economy">Economía</option>
+          </select>
+          <select id="sortBy" class="filter-select">
+            <option value="downloads">Más descargas</option>
+            <option value="rating">Mejor valoradas</option>
+            <option value="recent">Más recientes</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="configs-grid" id="popularConfigsContainer">
+        <!-- Las configuraciones se cargarán dinámicamente desde populares.js -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Mine-Download</h3>
+        <p>Ofrecemos las mejores configuraciones de plugins para tu servidor de Minecraft, optimizadas y listas para usar.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://discord.gg/example" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://github.com/example" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/example" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2023 Mine-Download. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="populares.js"></script>
+</body>
+</html>

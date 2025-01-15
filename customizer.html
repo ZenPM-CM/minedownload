@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizador de Configuraciones | Mine-Download</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="customizer.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M21 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7h2v7h14v-7h2m-6-2V7h3l-4-4-4 4h3v4H3v2h18v-2h-6Z"/>
+        </svg>
+        <h1>Mine-Download</h1>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="populares.html">Más Populares</a></li>
+        <li><a href="recent.html">Recientes</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="customizer.html">Custom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Personalizador de Configuraciones</h1>
+        <p>Crea tu configuración personalizada en minutos</p>
+        <div class="beta-warning">
+          <i class="fas fa-exclamation-triangle"></i>
+          Las configuraciones custom están en beta, por lo tanto puede provocar errores.
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="customizer-grid">
+        <div class="plugin-selector">
+          <h2>Selecciona un Plugin</h2>
+          <select id="pluginSelect">
+            <option value="">Selecciona un plugin...</option>
+            <option value="essentials">EssentialsX</option>
+            <option value="worldguard">WorldGuard</option>
+            <option value="luckperms">LuckPerms</option>
+          </select>
+        </div>
+
+        <div class="config-panel" id="configPanel">
+          <!-- Los campos se generarán dinámicamente -->
+        </div>
+
+        <div class="preview-panel">
+          <h2>Vista Previa</h2>
+          <pre id="configPreview"><code>Selecciona un plugin para comenzar...</code></pre>
+          <button id="downloadConfig" class="download-btn" disabled>
+            <i class="fas fa-download"></i> Descargar Configuración
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Mine-Download</h3>
+        <p>Ofrecemos las mejores configuraciones de plugins para tu servidor de Minecraft, optimizadas y listas para usar.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://discord.gg/example" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://github.com/example" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/example" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2023 Mine-Download. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="customizer.js"></script>
+</body>
+</html>

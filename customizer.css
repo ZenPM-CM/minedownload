@@ -1,0 +1,130 @@
+.customizer-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr 400px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.plugin-selector {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.plugin-selector select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.plugin-selector select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.config-panel {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.config-section {
+  margin-bottom: 2rem;
+}
+
+.config-section h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.config-field {
+  margin-bottom: 1.5rem;
+}
+
+.config-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.config-field input[type="text"],
+.config-field input[type="number"],
+.config-field select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.config-field input[type="text"]:focus,
+.config-field input[type="number"]:focus,
+.config-field select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.config-field .color-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.config-field .color-preview {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+}
+
+.config-field input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.preview-panel {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.preview-panel pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.preview-panel code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.preview-panel .download-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.preview-panel .download-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+  .customizer-grid {
+    grid-template-columns: 1fr;
+  }
+}

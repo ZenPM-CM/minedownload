@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuraciones Recientes | Mine-Download</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M21 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7h2v7h14v-7h2m-6-2V7h3l-4-4-4 4h3v4H3v2h18v-2h-6Z"/>
+        </svg>
+        <h1>Mine-Download</h1>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://example.com/populares">Más Populares</a></li>
+        <li><a href="recent.html">Recientes</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="customizer.html">Custom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Configuraciones Recientes</h1>
+        <p>Las últimas configuraciones optimizadas añadidas a nuestra colección</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="recent-updates">
+        <div class="update-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="week">Esta Semana</button>
+          <button class="filter-btn" data-filter="month">Este Mes</button>
+        </div>
+
+        <div class="configs-grid" id="recentConfigsContainer">
+          <!-- Las configuraciones se cargarán dinámicamente desde recent.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Mine-Download</h3>
+        <p>Ofrecemos las mejores configuraciones de plugins para tu servidor de Minecraft, optimizadas y listas para usar.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://discord.gg/example" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://github.com/example" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/example" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2023 Mine-Download. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="recent.js"></script>
+</body>
+</html>
