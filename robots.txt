@@ -1,0 +1,7 @@
+# Permitir todos los bots a rastrear todo el sitio
+User-agent: *
+Disallow:
+
+# O también puedes bloquear ciertas secciones
+# Deshabilitar el acceso a la carpeta admin (como ejemplo)
+Disallow: /admin/
